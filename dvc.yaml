@@ -1,0 +1,8 @@
+stages:
+  download:
+    cmd: python code/0_download.py
+    deps:
+      - code/0_download.py
+      - https://calcofi.org/downloads/database/CalCOFI_Database_194903-202001_csv_22Sep2021.zip
+    outs:
+      - data/downloaded
